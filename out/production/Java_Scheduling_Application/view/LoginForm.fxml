@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="309.0" prefWidth="301.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <left>
+        <VBox alignment="CENTER" fillWidth="false" prefHeight="198.0" prefWidth="289.0" spacing="11.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets top="60.0" />
+            </BorderPane.margin>
+            <TextField fx:id="UsernameTextBox" prefHeight="26.0" prefWidth="224.0" promptText="Username">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </TextField>
+            <TextField fx:id="PasswordTextBox" layoutX="10.0" layoutY="10.0" prefHeight="28.0" prefWidth="224.0" promptText="Password">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </TextField>
+            <Button fx:id="LoginBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onActionLogInBtn" prefHeight="23.0" prefWidth="155.0" text="Log In">
+            <font>
+               <Font size="12.0" />
+            </font>
+         </Button>
+             <Label fx:id="locationLoginLabel" contentDisplay="CENTER" prefHeight="35.0" prefWidth="260.0" text="Location:">
+            <font>
+               <Font size="12.0" />
+            </font></Label>
+            <Button fx:id="ExitBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onActionExitBtn" prefHeight="28.0" prefWidth="61.0" text="Exit" textAlignment="JUSTIFY">
+            <font>
+               <Font size="12.0" />
+            </font></Button>
+        </VBox>
+   </left>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+         <Label fx:id="appNameLabel" text="Log In " BorderPane.alignment="CENTER">
+             <font>
+                 <Font name="System Bold" size="36.0" />
+             </font>
+         </Label>
+   </top>
+</BorderPane>
